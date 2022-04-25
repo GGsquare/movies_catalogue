@@ -5,6 +5,8 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
     movies = []
+    for movie in range(12):
+        movies
     return render_template("homepage.html", movies=movies)
 
 if __name__ == '__main__':
